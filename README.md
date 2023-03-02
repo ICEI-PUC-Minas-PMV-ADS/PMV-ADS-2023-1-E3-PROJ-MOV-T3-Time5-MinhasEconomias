@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+<img src= "https://raw.githubusercontent.com/Karenfranco23/projeto-mobile-eixo3/c4843333a477f3e566a0afc629be08f38850f276/logo.png" style="width:250px;height:200px">
 
-`CURSO`
+# MINHAS ECONOMIAS
 
-`DISCIPLINA`
+`Analise e Desenvolvimento de Sistemas`
 
-`SEMESTRE`
+`Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+`3º Semestre`
+
+Devido ao alto número de brasileiros inadimplentes no país, acreditamos que a organização financeira é um facilitador para adoção de uma vida estável. Sendo assim, um organizador financeiro pode auxiliar o indivíduo a ter mais equilíbrio, bem como aproveitar o que realmente importa e ter uma vida financeira saudável a longo prazo. Desta forma, pretendemos simplificar a gestão das finanças pessoais para que lidar com o dinheiro não precise ser algo tão complexo e tornar possível para todos que possuem interesse, mudanças de alguns hábitos e comportamentos que podem estar dificultando a vida financeira.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* José Vicente do Vale Melo 
+* Karen Franco Alavarque Escobedo 
+* Luiz Carlos Gil de Souza 
+* Pedro Vitor Rodrigues da Silva
+* Ursula Daniela Figueiredo Barbosa 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Mateus Curcino De Lima
 
 ## Instruções de utilização
 
