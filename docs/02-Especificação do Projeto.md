@@ -55,9 +55,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|--------------------------------------------|------------------------------------------------------|
 |Diego Lopes         |Gerenciar meus gastos durante as viagens, incluindo transporte, hospedagem, alimentação e passeios turísticos. |Muitas vezes perco o controle dos gastos e acabo gastando mais do que o planejado. |
 |Melissa Soares      |Organizar os gastos da casa, incluindo contas de água, compras no supermercado, luz e gás. |Muitas vezes perco o controle dos gastos e acabo gastando mais do que o necessário. |
-|Lucas Simão         |Organizar meus gastos com alimentação, transporte e livros.         |Dificuldade em lembrar de todos os meus gastos e muitas vezes acabo gastando mais do que o planejado.  |
-|Elisa Andrade       |Organizar meus gastos e assim poder pagar minhas dívidas em dia e evitar novos endividamentos. |Para obter um celular com uma câmera melhor           |
-|Sergio Souza        |Comprar celulares com baixo custo           |Para diminuir o custo de sua empresa                  |
+|Lucas Simão         |Organizar meus gastos com alimentação, transporte e livros. |Dificuldade em lembrar de todos os meus gastos e muitas vezes acabo gastando mais do que o planejado. |
+|Elisa Andrade       |Organizar meus gastos e assim poder pagar minhas dívidas em dia e evitar novos endividamentos. |Panorama geral das minhas finanças e evitar novos problemas financeiros. |
+|Sergio Souza        |Gerenciar minhas receitas e despesas e assim poder tomar decisões mais assertivas sobre minhas finanças pessoais. |Muitas vezes perco o controle dos gastos e acabo gastando mais do que o necessário, para ter um panorama geral das minhas finanças e evitar novos problemas financeiros. |
 
 ## Modelagem do Processo de Negócio 
 
