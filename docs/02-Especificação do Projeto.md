@@ -82,9 +82,13 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
+|01| A primeira etapa do projeto referente a concepção e proposta de solução deverá ser entregue até o dia 05/03/2023. |
+|02| A segunda etapa do projeto referente ao projeto da solução deverá ser entregue até o dia 02/04/2023.       |
+|03| A terceira etapa do projeto referente a 1ª fase do desenvolvimento da solução deverá ser entregue até o dia 07/05/2023.        |
+|04| A quarta etapa do projeto referente a 2ª fase do desenvolvimento da solução deverá ser entregue até o dia 04/06/2023.     |
+|05| A quinta etapa do projeto referente aos relatórios das avaliações e entrega da solução deverá ser entregue até o dia 23/06/2023.      |
+|06| O sistema deve ser construído utilizando o React Native .      |
+|07| Não pode ser desenvolvido um módulo de backend.        |
 
 ## Diagrama de Casos de Uso
 
