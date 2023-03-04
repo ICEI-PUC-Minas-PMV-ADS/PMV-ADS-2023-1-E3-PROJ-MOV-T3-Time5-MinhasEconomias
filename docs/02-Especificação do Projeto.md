@@ -121,15 +121,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
+|ID| Restrições                                             |
 |--|-------------------------------------------------------|
-|01| O sistema deve ser construído utilizando o React Native.    |
-|02| O sistema não pode ser desenvolvido em um módulo de backend.|
-|03|                                                             |
-|04|                                                             |
-|05|                                                             |
-|06|                                                             |
-|07|                                                             |
+|01| O sistema deverá ser construído utilizando o React Native.    |
+|02| O sistema não poderá ser desenvolvido em um módulo de backend.|
+|03|                                                               |
+|04|                                                               |
+|05|                                                               |
+|06|                                                               |
+|07|                                                               |
 
 ## Diagrama de Casos de Uso
 
