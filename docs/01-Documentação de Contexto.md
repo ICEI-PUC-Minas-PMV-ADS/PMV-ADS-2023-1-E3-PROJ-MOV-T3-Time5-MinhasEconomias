@@ -8,11 +8,11 @@ Sabe-se que a organização financeira é a capacidade de gerenciar as finanças
 
 ## Problema
 
-As pessoas quando recebem seu dinheiro, já pensam logo em pagar as suas dívidas, algumas em gastar com assessórios ou diversão, sem saber se vai sobra algum dinheiro, ou até mesmo se aquele dinheiro é suficiente. Com isso temos um mau gerenciamento do dinheiro onde talvez a pessoa esteja gastando mais com diversão sendo que poderia estar priorizando a alimentação e até mesmo, gastando até mais do que de fato recebe.
+Os principais problemas que foram identificados como causa-raiz para o desenvolvimento do projeto são o descontrole financeiro, a má gestão de capital e o aumento desenfreado de gastos supérfluos que ocasionam o acúmulo de dívidas.
 
 ## Objetivos
 
-Com um aplicativo como o “Minhas Economias” ele te possibilitara conseguir ter uma boa organização financeira, sem ficar se preocupando em quanto você gastou até o momento, você coloca os seus ganhos e os gastos mensais, e por meio destes valores ele já faz os cálculos e em pouco tempo de forma fácil você visualiza quanto ainda sobra. Com os gastos separados por categorias, permite você observar em quais áreas tem mais gastos, categorias como: Comida, Roupas, Lazer etc.
+O projeto tem como objetivo auxiliar a organização financeira dos usuários, possibilitando a categorização de seus gastos, identificação dos itens que geram os maiores custos, visualização de saldo remanescente, bem como incentivá-los a criação de reservas de emergenciais.
 
 ## Justificativa
 
@@ -22,4 +22,4 @@ Sendo assim, um organizador financeiro pode auxiliar o indivíduo a ter mais equ
 
 ## Público-Alvo
 
-O público alvo são todas as pessoas que tem gastos mensais e precisam de algo que facilite a organização financeira, sem muita dor de cabeça e sem precisar ficar criando planilhas.
+O público-alvo do projeto destina-se a pessoas que possuem interesse em organizar suas finanças de maneira prática, rápida e fácil.
