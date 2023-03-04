@@ -34,8 +34,8 @@
 |Idade:|75|
 |Ocupação:| Dona de casa, aposentada. Criou seus 2 filhos e agora curte seus netos e seu jardim |
 |Aplicativos:| WhatsApp |
-|Motivações | Possui um sonho de investir o dinheiro da aposentadoria. |
-|Frustrações | Não consegue acompanhar investimentos e aumentar a rentabilidade. |
+|Motivações | Poder gerenciar seus gastos e economizar dinheiro para ajudar sua família e netos financeiramente e panorama geral das suas finanças e evitar endividamentos. |
+|Frustrações | Receio de compartilhar informações pessoais e financeiras. |
 |Hobbies | Gosta de ler, Jogar Xadrez |
 
 |Sergio Souza | <img src="/docs/img/personas/personas5.png" width="200"> |
@@ -53,10 +53,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`         |PARA ... `MOTIVO/VALOR`                               |
 |--------------------|--------------------------------------------|------------------------------------------------------|
-|Diego Lopes         |Um celular de ponta                         |Para gravar vídeos e tirar fotos com qualidades       |
-|Melissa Soares      |Trocar o celular                            |Não tem um motivo específico, só quer trocar de modelo|
-|Lucas Simão         |Trocar o celular para o mesmo modelo        |A bateria estar ruim e não conseguir mais jogar nele  |
-|Elisa Andrade       |Trocar o celular para um modelo mais recente|Para obter um celular com uma câmera melhor           |
+|Diego Lopes         |Gerenciar meus gastos durante as viagens, incluindo transporte, hospedagem, alimentação e passeios turísticos. |Muitas vezes perco o controle dos gastos e acabo gastando mais do que o planejado. |
+|Melissa Soares      |Organizar os gastos da casa, incluindo contas de água, compras no supermercado, luz e gás. |Muitas vezes perco o controle dos gastos e acabo gastando mais do que o necessário. |
+|Lucas Simão         |Organizar meus gastos com alimentação, transporte e livros.         |Dificuldade em lembrar de todos os meus gastos e muitas vezes acabo gastando mais do que o planejado.  |
+|Elisa Andrade       |Organizar meus gastos e assim poder pagar minhas dívidas em dia e evitar novos endividamentos. |Para obter um celular com uma câmera melhor           |
 |Sergio Souza        |Comprar celulares com baixo custo           |Para diminuir o custo de sua empresa                  |
 
 ## Modelagem do Processo de Negócio 
