@@ -7,8 +7,8 @@
 |Idade:|35|
 |Ocupação:| Influencer digital |
 |Aplicativos:| WhatsApp, Facebook, Instagram, LinkedIn, Aplicativos de bancos, Spotify    |
-|Motivações | Possui um sonho de fazer publicidade de grandes marcas  |
-|Frustrações | Não ter condições de ter um celular de ponta para fazer seus vídeos com qualidade |
+|Motivações | Economizar dinheiro para realizar novas viagens no futuro. Ter uma visão clara das finanças para poder desfrutar melhor as viagens sem se preocupar com gastos excessivos.   |
+|Frustrações | Gastar mais do que o esperado durante as viagens e ter que adiar novos planos de viagem. Não conseguir aproveitar bem as viagens por estar sempre preocupado com os gastos. |
 |Hobbies | Gosta de ler, Ouvir música |
 
 |Melissa Soares| ![image](/docs/img/personas/personas2.png) |
