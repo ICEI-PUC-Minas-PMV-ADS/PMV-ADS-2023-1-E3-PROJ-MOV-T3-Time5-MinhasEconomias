@@ -53,7 +53,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`         |PARA ... `MOTIVO/VALOR`                               |
 |--------------------|--------------------------------------------|------------------------------------------------------|
-|Diego Lopes         |Gerenciar meus gastos durante as viagens, incluindo transporte, hospedagem, alimentação e passeios turísticos. |Muitas vezes perco o controle dos gastos e acabo gastando mais do que o planejado. |
+|Diego Lopes         |Gerenciar meus gastos durante as viagens, incluindo transporte, hospedagem, alimentação e passeios turísticos. |muitas vezes acabo gastando mais do que o planejado, o que me impede de realizar meus sonhos de viagem. |
 |Melissa Soares      |Organizar os gastos da casa, incluindo contas de água, compras no supermercado, luz e gás. |Muitas vezes perco o controle dos gastos e acabo gastando mais do que o necessário. |
 |Lucas Simão         |Organizar meus gastos com alimentação, transporte e livros. |Dificuldade em lembrar de todos os meus gastos e muitas vezes acabo gastando mais do que o planejado. |
 |Elisa Andrade       |Organizar meus gastos e assim poder pagar minhas dívidas em dia e evitar novos endividamentos. |Panorama geral das minhas finanças e evitar novos problemas financeiros. |
