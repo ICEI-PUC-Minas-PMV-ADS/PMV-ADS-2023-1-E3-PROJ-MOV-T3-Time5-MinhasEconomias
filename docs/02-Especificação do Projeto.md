@@ -2,21 +2,62 @@
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+|Diego Lopes| ![image](/docs/img/personas/personas1.png) |
+|-----------------------|-|
+|Idade:|35|
+|Ocupação:| Influencer digital |
+|Aplicativos:| WhatsApp, Facebook, Instagram, LinkedIn, Aplicativos de bancos, Spotify    |
+|Motivações | Possui um sonho de fazer publicidade de grandes marcas  |
+|Frustrações | Não ter condições de ter um celular de ponta para fazer seus vídeos com qualidade |
+|Hobbies | Gosta de ler, Ouvir música |
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+|Melissa Soares| ![image](/docs/img/personas/personas2.png) |
+|-----------------------|-|
+|Idade:|56|
+|Ocupação:| Publicitária em uma agência em período integral |
+|Aplicativos:| WhatsApp, Facebook, Instagram |
+|Motivações | Gostaria de morar em outro país para conhecer novas culturas, Seus filhos são seu tesouro   |
+|Frustrações | Gostaria de trocar seu aparelho, mas não sabe aonde vender |
+|Hobbies | Gosta de cuidar de suas plantas, Faz natação |
 
+|Lucas Simão| <img src="/docs/img/personas/personas3.png" width="200"> |
+|-----------------------|-|
+|Idade:|15|
+|Ocupação:| Estudante do ensino médio |
+|Aplicativos:| WhatsApp, Facebook, Instagram, LinkedIn, Aplicativos de bancos, Spotify    |
+|Motivações | Espera um dia ser jogador profissional de free fire, Encontrar seus amigos a noite para conversas divertidas  |
+|Frustrações | Por jogar tanto no celular, a bateria acaba sendo prejudicada e por esse motivo ele sempre precisa comprar um aparelho novo, gastando muito dinheiro sempre |
+|Hobbies | Andar de skate , Assistir TV  |
+
+|Elisa Andrade| <img src="/docs/img/personas/personas4.png" width="200"> |
+|-----------------------|-|
+|Idade:|75|
+|Ocupação:| Dona de casa, aposentada. Criou seus 2 filhos e agora curte seus netos e seu jardim |
+|Aplicativos:| WhatsApp |
+|Motivações | Seus netos são muito preciosos para ela, Encontrar alguns amigos para jogar xadrez |
+|Frustrações | Por seus netos não morarem na mesma cidade, só conseguem se falar por vídeo chamada, Gostaria de trocar de celular para obter um com uma câmera melhor |
+|Hobbies | Gosta de ler, Jogar Xadrez |
+
+|Sergio Souza | <img src="/docs/img/personas/personas5.png" width="200"> |
+|-----------------------|-|
+|Idade:|55|
+|Ocupação:| Analista de compras em uma startup que assessora vendas de roupa em atacado |
+|Aplicativos:| WhatsApp, Facebook |
+|Motivações |  Viajar ao mundo com sua esposa e conhecer novas culturas  |
+|Frustrações | Sua empresa precisa diminuir custos com despesas de celulares corporativos para seus funcionários |
+|Hobbies | Academia, Jogar tênis |
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`         |PARA ... `MOTIVO/VALOR`                               |
+|--------------------|--------------------------------------------|------------------------------------------------------|
+|Diego Lopes         |Um celular de ponta                         |Para gravar vídeos e tirar fotos com qualidades       |
+|Melissa Soares      |Trocar o celular                            |Não tem um motivo específico, só quer trocar de modelo|
+|Lucas Simão         |Trocar o celular para o mesmo modelo        |A bateria estar ruim e não conseguir mais jogar nele  |
+|Elisa Andrade       |Trocar o celular para um modelo mais recente|Para obter um celular com uma câmera melhor           |
+|Sergio Souza        |Comprar celulares com baixo custo           |Para diminuir o custo de sua empresa                  |
 
 ## Modelagem do Processo de Negócio 
 
