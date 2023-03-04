@@ -16,8 +16,8 @@
 |Idade:|56|
 |Ocupação:| Publicitária em uma agência em período integral |
 |Aplicativos:| WhatsApp, Facebook, Instagram |
-|Motivações | Gostaria de morar em outro país para conhecer novas culturas, Seus filhos são seu tesouro   |
-|Frustrações | Gostaria de trocar seu aparelho, mas não sabe aonde vender |
+|Motivações | Organizar os gastos com as despesas domésticas, como compras no supermercado, contas de água, luz e gás. Economizar para realizar pequenas reformas ou comprar algum item para a casa.   |
+|Frustrações | Não conseguir economizar dinheiro suficiente para realizar projetos pessoais. Conflitos com o parceiro ou outros membros da família sobre decisões financeiras. |
 |Hobbies | Gosta de cuidar de suas plantas, Faz natação |
 
 |Lucas Simão| <img src="/docs/img/personas/personas3.png" width="200"> |
@@ -25,8 +25,8 @@
 |Idade:|15|
 |Ocupação:| Estudante do ensino médio |
 |Aplicativos:| WhatsApp, Facebook, Instagram, LinkedIn, Aplicativos de bancos, Spotify    |
-|Motivações | Espera um dia ser jogador profissional de free fire, Encontrar seus amigos a noite para conversas divertidas  |
-|Frustrações | Por jogar tanto no celular, a bateria acaba sendo prejudicada e por esse motivo ele sempre precisa comprar um aparelho novo, gastando muito dinheiro sempre |
+|Motivações | Controlar seus gastos com alimentação, transporte e materiais escolares. Aprender a gerenciar melhor seu dinheiro para não depender tanto dos pais.  |
+|Frustrações | Dificuldade em lembrar todos os gastos realizados. Sensação de que seus pais não confiam em sua capacidade de administrar dinheiro. |
 |Hobbies | Andar de skate , Assistir TV  |
 
 |Elisa Andrade| <img src="/docs/img/personas/personas4.png" width="200"> |
@@ -34,8 +34,8 @@
 |Idade:|75|
 |Ocupação:| Dona de casa, aposentada. Criou seus 2 filhos e agora curte seus netos e seu jardim |
 |Aplicativos:| WhatsApp |
-|Motivações | Seus netos são muito preciosos para ela, Encontrar alguns amigos para jogar xadrez |
-|Frustrações | Por seus netos não morarem na mesma cidade, só conseguem se falar por vídeo chamada, Gostaria de trocar de celular para obter um com uma câmera melhor |
+|Motivações | Possui um sonho de investir o dinheiro da aposentadoria. |
+|Frustrações | Não consegue acompanhar investimentos e aumentar a rentabilidade. |
 |Hobbies | Gosta de ler, Jogar Xadrez |
 
 |Sergio Souza | <img src="/docs/img/personas/personas5.png" width="200"> |
@@ -43,8 +43,8 @@
 |Idade:|55|
 |Ocupação:| Analista de compras em uma startup que assessora vendas de roupa em atacado |
 |Aplicativos:| WhatsApp, Facebook |
-|Motivações |  Viajar ao mundo com sua esposa e conhecer novas culturas  |
-|Frustrações | Sua empresa precisa diminuir custos com despesas de celulares corporativos para seus funcionários |
+|Motivações |  Controlar os gastos com investimentos no negócio. Ter uma visão clara das receitas e despesas para poder tomar decisões mais assertivas.   |
+|Frustrações | Dificuldade em conciliar a gestão financeira do negócio com a vida pessoal. Tomar decisões financeiras equivocadas que afetam o desempenho do negócio. |
 |Hobbies | Academia, Jogar tênis |
 
 ## Histórias de Usuários
