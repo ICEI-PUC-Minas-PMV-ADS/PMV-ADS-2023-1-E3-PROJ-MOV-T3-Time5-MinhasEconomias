@@ -67,7 +67,7 @@ O modelo de proposta do sistema idealiza como pontos principais em seu escopo, a
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+Para alcançar os objetivos e estratégias do negócio foram identificados pontos de atenção e melhorias o estabelecimento de prazos para o cumprimento do cronograma, fluxo de comunicação adequado para o sucesso na execução da proposta, como limitação apontamos o conhecimento técnico da equipe, dado que nenhum dos integrantes possuem experiência com desenvolvimento mobile, em contrapartida torna-se uma oportunidade de aprendizado técnico. Vale ressaltar os pontos fortes da proposta como a possibilidade de aderência da aplicação ao mercado, sistema intuitivo e time auto organizável. 
 
 ### Processo
 
