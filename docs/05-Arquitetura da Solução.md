@@ -19,13 +19,13 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-![Imagem do Modelo Entidade Relacionamento](//docs/img/MER.png)
+![Imagem do Modelo Entidade Relacionamento](/docs/img/MER.png)
 
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-![Imagem do Esquema Relacional](//docs/img/esquema_relacional.png)
+![Imagem do Esquema Relacional](/docs/img/esquema_relacional.png)
 
 ## Modelo Físico
 
