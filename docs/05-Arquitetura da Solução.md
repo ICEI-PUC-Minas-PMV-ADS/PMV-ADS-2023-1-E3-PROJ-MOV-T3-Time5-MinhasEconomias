@@ -8,12 +8,10 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+O Diagrama de Classes, conforme apresentado na Figura 8, representa as classes a serem implementadas no sistema, com o objetivo de ilustrar os objetos, bem como seus respectivos atributos e métodos. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+![Imagem4](https://user-images.githubusercontent.com/100963513/228103250-3bf103fd-a1e6-4b3c-874b-653d46a539e1.png)
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER
 
@@ -31,22 +29,18 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
 
+![Imagem2](https://user-images.githubusercontent.com/100963513/228103415-5e90098f-966d-46ce-9bcd-4c2fcb49264f.png)
+
+
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+![Imagem5](https://user-images.githubusercontent.com/100963513/228103722-70342536-6e15-4e9a-9d6a-48f00b148c1c.png)
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+![Imagem6](https://user-images.githubusercontent.com/100963513/228103870-05d1475d-ce36-4c56-ac40-e0a342318841.png)
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
 
 ## Qualidade de Software
 
