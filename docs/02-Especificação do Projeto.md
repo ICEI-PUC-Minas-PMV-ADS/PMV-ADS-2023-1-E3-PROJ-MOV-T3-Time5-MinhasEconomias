@@ -71,7 +71,10 @@ Para alcançar os objetivos e estratégias do negócio foram identificados ponto
 
 ### Processo
 
-![BPMN](https://user-images.githubusercontent.com/101661631/226425230-0a69eef2-ce93-44f1-85fc-3bb3c649a731.png)
+![BPMN_Manual](https://user-images.githubusercontent.com/101661631/229291287-4240320a-a42b-4341-ad75-08dacf213814.png)
+
+
+![BPMN_Process](https://user-images.githubusercontent.com/101661631/229292746-eab78557-3db3-419a-871f-5a482b576a9a.png)
 
 
 ## Indicadores de Desempenho
