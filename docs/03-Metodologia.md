@@ -7,10 +7,10 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 |         AMBIENTE`          |        PLATAFORMA         |                  LINK DE ACESSO                               |
 |----------------------------|---------------------------|---------------------------------------------------------------|
-|Repositório de código fonte |         GitHub            |[Minhas Economias]([https://github.com/ICEI-PUC-Minas-PMV-ADS/oferta_fone](https://github.com/ICEI-PUC-Minas-PMV-ADS/PMV-ADS-2023-1-E3-PROJ-MOV-T3-Time5-MinhasEconomias))|
-|Design de Interfaces        |         Miro              |[Miro.com]([https://miro.com/app/board/uXjVPXc-W4E=/?share_link_id=735742997379](https://miro.com/welcomeonboard/VFdWYjJaSW1LUDNrY0dkT2Q3NVI5SkJXWVl3NmlmajJ5QUZNRmY0WGZ2anJJbVdLMVFneFdITFV2VzlLS0VjSXwzNDU4NzY0NTQ5MzkzMjc1ODc4fDI=?share_link_id=783379668364))|
-|Gerenciamento do Projeto    |         Trello            |[Planejamento do Projeto]([https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/61/views/1](https://trello.com/b/RMEz7h6s/projeto-desenvolvimento-de-uma-aplica%C3%A7%C3%A3o-m%C3%B3vel))  |
-|Comunicação e Reuniões      |      Teams/WhatsApp       |[Grupo 05 - Projeto: Minhas Economias]([https://teams.microsoft.com/l/channel/19%3a129553a617b6458dbd85f9d0b3529095%40thread.tacv2/Grupo%25204%2520-%2520Segunda%252020h%2520-%2520Troca%2520celulares?groupId=4b320cea-c5c5-4c56-a163-6d1bcaa5ef3f&tenantId=14cbd5a7-ec94-46ba-b314-cc0fc972a161](https://teams.microsoft.com/l/team/19%3aS2anVj6Cq-LZcF0eURo90mdYRq_oUxT5kaZO16b5RS81%40thread.tacv2/conversations?groupId=2d1e8de9-810d-4d62-8aba-ec19ebc7345a&tenantId=14cbd5a7-ec94-46ba-b314-cc0fc972a161))|
+|Repositório de código fonte |         GitHub            |[Minhas Economias](https://github.com/ICEI-PUC-Minas-PMV-ADS/PMV-ADS-2023-1-E3-PROJ-MOV-T3-Time5-MinhasEconomias)|
+|Design de Interfaces        |         Miro              |[Miro.com](https://miro.com/welcomeonboard/VFdWYjJaSW1LUDNrY0dkT2Q3NVI5SkJXWVl3NmlmajJ5QUZNRmY0WGZ2anJJbVdLMVFneFdITFV2VzlLS0VjSXwzNDU4NzY0NTQ5MzkzMjc1ODc4fDI=?share_link_id=783379668364)|
+|Gerenciamento do Projeto    |         Trello            |[Planejamento do Projeto](https://trello.com/b/RMEz7h6s/projeto-desenvolvimento-de-uma-aplica%C3%A7%C3%A3o-m%C3%B3vel)  |
+|Comunicação e Reuniões      |      Teams/WhatsApp       |[Grupo 05 - Projeto: Minhas Economias](https://teams.microsoft.com/l/team/19%3aS2anVj6Cq-LZcF0eURo90mdYRq_oUxT5kaZO16b5RS81%40thread.tacv2/conversations?groupId=2d1e8de9-810d-4d62-8aba-ec19ebc7345a&tenantId=14cbd5a7-ec94-46ba-b314-cc0fc972a161)|
 
 ## Controle de Versão
 
