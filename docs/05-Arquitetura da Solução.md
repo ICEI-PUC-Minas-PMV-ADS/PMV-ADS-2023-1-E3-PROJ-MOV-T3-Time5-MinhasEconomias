@@ -44,15 +44,16 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+A qualidade de um aplicativo móvel de controle financeiro depende de vários fatores, incluindo funcionalidade, usabilidade, desempenho, segurança e manutenibilidade. Aqui estão algumas considerações importantes para avaliar a qualidade do software de um aplicativo móvel de controle financeiro: 
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+- Funcionalidade: O aplicativo deve fornecer todas as funcionalidades necessárias para gerenciar as finanças do usuário, como a capacidade de monitorar gastos, gerenciar orçamentos, visualizar relatórios e realizar transações financeiras.  
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+- Usabilidade: O aplicativo deve ser fácil de usar e intuitivo, com uma interface clara e organizada que permita aos usuários navegar facilmente pelas diferentes funcionalidades. O aplicativo também deve ser acessível e ter boa usabilidade para usuários com deficiências visuais ou motoras. 
 
-> **Links Úteis**:
->
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
+- Desempenho: O aplicativo deve ser rápido e responsivo, com tempos de carregamento curtos e operações suaves. Ele deve ser capaz de lidar com grandes quantidades de dados de forma eficiente e sem travar. 
+
+- Segurança: O aplicativo deve proteger as informações financeiras do usuário, incluindo senhas e outras informações sensíveis.  
+
+- Manutenibilidade: O aplicativo deve ser fácil de manter e atualizar, com um código bem estruturado e documentado que permita a correção de bugs e a implementação de novas funcionalidades. Ele também deve ser capaz de se integrar com ferramentas de monitoramento e análise para ajudar a identificar problemas e melhorias. 
+
+A qualidade do software de um aplicativo móvel de controle financeiro pode ser avaliada por meio de testes de usabilidade, testes de segurança e testes de desempenho. Além disso, é importante ouvir feedback dos usuários e responder rapidamente a quaisquer problemas ou sugestões de melhoria. 
