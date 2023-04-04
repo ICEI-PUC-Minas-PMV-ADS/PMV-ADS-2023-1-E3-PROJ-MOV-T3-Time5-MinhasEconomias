@@ -1,11 +1,20 @@
-# Instruções de utilização
+# Minhas Economias - React Native Project
 
-## Instalação do Site
+## Instalação
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
+Para instalar as dependencias clone o projeto e execute o seguinte comando dentro da pasta.
 
-## Histórico de versões
+```shell
+// or npm install
+yarn install
+```
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+logo após execute o sistema:
+
+```shell
+yarn android
+```
+
+## Como contribuir
+
+Esteja sempre atento à criação de novas branches, padronização de commits e comentários em código para que possamos melhorar sua mantenabilidade.
