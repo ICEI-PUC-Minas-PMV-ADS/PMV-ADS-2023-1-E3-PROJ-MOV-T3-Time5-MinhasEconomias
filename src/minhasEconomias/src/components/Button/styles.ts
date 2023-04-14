@@ -25,5 +25,5 @@ export const ButtonText = styled.Text<ButtonProps>`
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: ${props => (props.color === 'gray' ? '#FFF' : '#452E4F')};
+  color: ${props => (props.color === 'purple' ? '#FFF' : '#FFF')};
 `;
