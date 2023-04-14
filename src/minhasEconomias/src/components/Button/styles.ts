@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 interface ButtonProps {
-  color: 'gray' | 'white';
+  color: 'purple' | 'red';
   halfSize: boolean;
 }
 
@@ -13,7 +13,7 @@ export const Container = styled.TouchableOpacity<ButtonProps>`
   height: 55px;
   padding: 8px;
   margin: 16px auto 0;
-  background: ${props => (props.color === 'gray' ? '#444cb4' : '#444cb4')};
+  background: ${props => (props.color === 'purple' ? '#444cb4' : '#dc2c04')};
 
   box-shadow: 10px 5px 5px black;
 `;

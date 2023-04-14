@@ -64,7 +64,7 @@ const Login = () => {
         onChangeText={value => setPassword(value)}
       />
 
-      <Button text="Entrar" color="gray" onPress={handleLogin} />
+      <Button text="Entrar" color="purple" onPress={handleLogin} />
 
       <ForgotPasswordButton>
         <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
