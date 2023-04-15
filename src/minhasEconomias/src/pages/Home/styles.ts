@@ -99,6 +99,12 @@ const styles = StyleSheet.create({
     height: 2,
     backgroundColor: '#343434',
   },
+  buttonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  },
 });
 
 export default styles;

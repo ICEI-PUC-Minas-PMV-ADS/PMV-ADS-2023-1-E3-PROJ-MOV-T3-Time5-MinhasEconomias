@@ -12,6 +12,7 @@ import {
   ExpenseName,
   ExpenseValue,
 } from '../../components/Button/styles';
+import Button from '../../components/Button';
 
 const Home = () => {
   const {navigate} = useNavigation();
@@ -49,6 +50,12 @@ const Home = () => {
   const getButtonColor = (index: number) => {
     return index % 2 === 0 ? 'purple' : '#red';
   };
+
+  // TODO: chamar tela de cadastro de com
+  function handleCadastraDespesaouLucro() {}
+
+  // TODO: chamar exclusão
+  function handleRemoveDespesaouLucro() {}
 
   return (
     <View style={styles.container}>
@@ -120,6 +127,21 @@ const Home = () => {
           );
         })}
       </ScrollView>
+
+      <View style={styles.buttonsContainer}>
+        <Button
+          text="Adicionar"
+          color="purple"
+          halfSize={true}
+          onPress={handleCadastraDespesaouLucro}
+        />
+        <Button
+          text="Remover"
+          halfSize={true}
+          color="red"
+          onPress={handleRemoveDespesaouLucro}
+        />
+      </View>
     </View>
   );
 };
