@@ -15,9 +15,6 @@ const styles = StyleSheet.create({
   avatarContainer: {
     backgroundColor: '#dcdcf4',
   },
-  avatarIcon: {
-    backgroundColor: '#dcdcf4',
-  },
   container: {
     flexDirection: 'column',
   },

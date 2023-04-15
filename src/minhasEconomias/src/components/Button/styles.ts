@@ -27,3 +27,21 @@ export const ButtonText = styled.Text<ButtonProps>`
   text-align: center;
   color: ${props => (props.color === 'purple' ? '#FFF' : '#FFF')};
 `;
+
+export const ButtonContainer = styled(Container)`
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px;
+`;
+
+export const ExpenseName = styled.Text`
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+`;
+
+export const ExpenseValue = styled.Text`
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+`;

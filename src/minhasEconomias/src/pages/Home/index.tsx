@@ -1,11 +1,17 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import {Avatar} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/core';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import FeatherIcons from 'react-native-vector-icons/Feather';
 
 import styles from './styles';
+import {
+  ButtonContainer,
+  ExpenseName,
+  ExpenseValue,
+} from '../../components/Button/styles';
 
 const Home = () => {
   const {navigate} = useNavigation();
@@ -17,6 +23,7 @@ const Home = () => {
     setSelectedOption(optionIndex);
   };
 
+  //TODO: substituir por chamada na fake API
   const options = [
     {label: 'Jan', value: 'jan'},
     {label: 'Fev', value: 'fev'},
@@ -24,8 +31,24 @@ const Home = () => {
     {label: 'Abr', value: 'abr'},
   ];
 
+  //TODO: substituir por chamada na fake API
+  const expenses = [
+    {name: 'Despesa 1', value: 100.0},
+    {name: 'Despesa 2', value: 50.0},
+    {name: 'Despesa 3', value: 75.0},
+    {name: 'Despesa 4', value: 120.0},
+    {name: 'Despesa 5', value: 85.0},
+    {name: 'Despesa 6', value: 60.0},
+    {name: 'Despesa 7', value: 110.0},
+  ];
+
   const balanceTitle = showBalance ? 'Saldo Atual' : 'Saldo Oculto';
   const balanceValue = showBalance ? 'R$ 1.000,00' : '---';
+
+  // Função que retorna a cor de fundo do botão, com base no índice
+  const getButtonColor = (index: number) => {
+    return index % 2 === 0 ? 'purple' : '#red';
+  };
 
   return (
     <View style={styles.container}>
@@ -84,6 +107,19 @@ const Home = () => {
       </View>
 
       <View style={styles.line} />
+
+      <ScrollView style={{maxHeight: 350, overflow: 'scroll'}}>
+        {expenses.map((expense, index) => {
+          return (
+            <ButtonContainer key={index} color={getButtonColor(index)}>
+              <ExpenseName>{expense.name}</ExpenseName>
+              <ExpenseValue>
+                {showBalance ? `RS ${expense.value.toFixed(2)}` : '****'}
+              </ExpenseValue>
+            </ButtonContainer>
+          );
+        })}
+      </ScrollView>
     </View>
   );
 };
