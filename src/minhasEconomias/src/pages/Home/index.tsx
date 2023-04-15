@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {Avatar} from 'react-native-elements';
+import {useNavigation} from '@react-navigation/core';
+import Icon from 'react-native-vector-icons/EvilIcons';
 
 import styles from './styles';
 
 const Home = () => {
+  const {navigate} = useNavigation();
+
   const [selectedOption, setSelectedOption] = useState(3);
 
   const handleOptionPress = (optionIndex: number) => {
@@ -30,6 +34,7 @@ const Home = () => {
             size: 30,
             color: '#444cb4',
           }} // ícone do Avatar
+          onPress={() => navigate('Profile' as never)}
           overlayContainerStyle={styles.avatarContainer} // cor de fundo do Avatar
         />
       </View>
@@ -39,7 +44,11 @@ const Home = () => {
           <TouchableOpacity
             key={option.value}
             style={[
-              styles.optionButton,
+              options.length - 1 === index
+                ? styles.optionButtonRadiusRight
+                : index === 0
+                ? styles.optionButtonRadiusLeft
+                : styles.optionButtonRadiusCentrais,
               selectedOption === index && styles.selectedOptionButton,
             ]}
             onPress={() => handleOptionPress(index)}>
@@ -52,6 +61,7 @@ const Home = () => {
             </Text>
           </TouchableOpacity>
         ))}
+        <Icon size={50} name="calendar" />
       </View>
     </View>
   );

@@ -1,5 +1,16 @@
 import {StyleSheet} from 'react-native';
 
+const optionButtonStyles = {
+  backgroundColor: '#f5f5f5',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  borderWidth: 1,
+  borderTopWidth: 1,
+  borderBottomWidth: 1,
+  borderColor: '#444cb4',
+  width: 70,
+};
+
 const styles = StyleSheet.create({
   avatarContainer: {
     backgroundColor: '#dcdcf4',
@@ -15,6 +26,8 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     padding: 20,
+    paddingTop: 35,
+    paddingBottom: 30,
   },
   optionsContainer: {
     flexDirection: 'row',
@@ -22,12 +35,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   optionButton: {
-    backgroundColor: '#f5f5f5',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 80,
-    borderWidth: 1,
-    borderColor: '#444cb4',
+    ...optionButtonStyles,
+  },
+  optionButtonRadiusCentrais: {
+    ...optionButtonStyles,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+  },
+  optionButtonRadiusRight: {
+    ...optionButtonStyles,
+    borderTopRightRadius: 12,
+    borderBottomRightRadius: 12,
+    borderLeftWidth: 0,
+    borderRightWidth: 1,
+  },
+  optionButtonRadiusLeft: {
+    ...optionButtonStyles,
+    borderTopLeftRadius: 12,
+    borderBottomLeftRadius: 12,
+    borderLeftWidth: 1,
+    borderRightWidth: 0,
   },
   selectedOptionButton: {
     backgroundColor: '#444cb4',
@@ -35,7 +62,7 @@ const styles = StyleSheet.create({
   optionButtonText: {
     color: '#333',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 12,
   },
   selectedOptionButtonText: {
     color: '#fff',
