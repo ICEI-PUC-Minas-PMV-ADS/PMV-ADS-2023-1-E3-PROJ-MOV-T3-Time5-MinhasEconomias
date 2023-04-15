@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/core';
+import {Keyboard} from 'react-native';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -19,6 +20,29 @@ const Register = () => {
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const [isTitleVisible, setIsTitleVisible] = useState(true);
+
+  useEffect(() => {
+    const keyboardDidShowListener = Keyboard.addListener(
+      'keyboardDidShow',
+      () => {
+        setIsTitleVisible(false);
+      },
+    );
+
+    const keyboardDidHideListener = Keyboard.addListener(
+      'keyboardDidHide',
+      () => {
+        setIsTitleVisible(true);
+      },
+    );
+
+    return () => {
+      keyboardDidShowListener.remove();
+      keyboardDidHideListener.remove();
+    };
+  }, []);
 
   async function handleCreateAccount() {
     if (!name || !lastname || !email || !password) {
@@ -44,7 +68,7 @@ const Register = () => {
         </LoginButton>
       </LoginButtonContainer>
 
-      <Title>Inscreva-se</Title>
+      {isTitleVisible && <Title>Inscreva-se</Title>}
 
       <Input
         title="Nome"

@@ -48,7 +48,7 @@ const Home = () => {
 
   // Função que retorna a cor de fundo do botão, com base no índice
   const getButtonColor = (index: number) => {
-    return index % 2 === 0 ? 'purple' : '#red';
+    return index % 2 === 0 ? 'purple' : 'white';
   };
 
   // TODO: chamar tela de cadastro de com
@@ -119,8 +119,10 @@ const Home = () => {
         {expenses.map((expense, index) => {
           return (
             <ButtonContainer key={index} color={getButtonColor(index)}>
-              <ExpenseName>{expense.name}</ExpenseName>
-              <ExpenseValue>
+              <ExpenseName color={getButtonColor(index)}>
+                {expense.name}
+              </ExpenseName>
+              <ExpenseValue color={getButtonColor(index)}>
                 {showBalance ? `RS ${expense.value.toFixed(2)}` : '****'}
               </ExpenseValue>
             </ButtonContainer>

@@ -10,12 +10,12 @@ export const Container = styled.View`
 export const LoginButtonContainer = styled.View`
   position: absolute;
   top: 32px;
-  left: 80%;
+  left: 78%;
   width: 100%;
 `;
 
 export const LoginButton = styled.TouchableOpacity`
-  width: 60px;
+  width: 65px;
   height: 32px;
 `;
 

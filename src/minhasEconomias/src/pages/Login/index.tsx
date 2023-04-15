@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/core';
+import {Keyboard} from 'react-native';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -23,6 +24,28 @@ const Login = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isTitleVisible, setIsTitleVisible] = useState(true);
+
+  useEffect(() => {
+    const keyboardDidShowListener = Keyboard.addListener(
+      'keyboardDidShow',
+      () => {
+        setIsTitleVisible(false);
+      },
+    );
+
+    const keyboardDidHideListener = Keyboard.addListener(
+      'keyboardDidHide',
+      () => {
+        setIsTitleVisible(true);
+      },
+    );
+
+    return () => {
+      keyboardDidShowListener.remove();
+      keyboardDidHideListener.remove();
+    };
+  }, []);
 
   async function handleLogin() {
     if (!email || !password) {
@@ -49,7 +72,7 @@ const Login = () => {
         </RegisterButton>
       </RegisterButtonContainer>
 
-      <Title>Seja Bem-Vindo(a)!</Title>
+      {isTitleVisible && <Title>Seja Bem-Vindo(a)!</Title>}
 
       <Input
         title="E-mail"

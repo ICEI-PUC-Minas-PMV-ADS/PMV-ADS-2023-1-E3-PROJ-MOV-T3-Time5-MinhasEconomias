@@ -10,12 +10,12 @@ export const Container = styled.View`
 export const RegisterButtonContainer = styled.View`
   position: absolute;
   top: 32px;
-  left: 70%;
+  left: 62%;
   width: 100%;
 `;
 
 export const RegisterButton = styled.TouchableOpacity`
-  width: 100px;
+  width: 125px;
   height: 32px;
 `;
 

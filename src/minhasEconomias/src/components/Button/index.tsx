@@ -4,7 +4,7 @@ import {TouchableOpacityProps} from 'react-native';
 import {Container, ButtonText} from './styles';
 
 interface ButtonProps extends TouchableOpacityProps {
-  color: 'purple' | 'red';
+  color: 'purple' | 'red' | 'white';
   text: string;
   halfSize?: boolean;
 }
