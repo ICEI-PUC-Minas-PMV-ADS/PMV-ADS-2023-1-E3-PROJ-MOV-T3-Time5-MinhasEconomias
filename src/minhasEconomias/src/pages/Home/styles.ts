@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
   },
-  rightContainer: {
+  profileContainer: {
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
@@ -66,6 +66,41 @@ const styles = StyleSheet.create({
   },
   selectedOptionButtonText: {
     color: '#fff',
+  },
+  amountContainer: {
+    paddingTop: 30,
+    paddingBottom: 20,
+  },
+  balanceContainer: {
+    paddingLeft: 40,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  saldoContainer: {
+    paddingLeft: 15,
+    flexDirection: 'row',
+  },
+  balanceTitle: {
+    fontSize: 10,
+    color: '#666',
+    marginRight: 5,
+  },
+  balanceValue: {
+    fontSize: 20,
+    color: '#333',
+  },
+  balanceLine: {
+    borderTopWidth: 1,
+    borderTopColor: '#ddd',
+  },
+  eyeIcon: {
+    position: 'absolute',
+    right: 10,
+    padding: 10,
+  },
+  line: {
+    height: 2,
+    backgroundColor: '#343434',
   },
 });
 

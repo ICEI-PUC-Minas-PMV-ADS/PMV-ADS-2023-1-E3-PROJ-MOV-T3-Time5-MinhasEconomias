@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {Avatar} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/core';
-import Icon from 'react-native-vector-icons/EvilIcons';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import FeatherIcons from 'react-native-vector-icons/Feather';
 
 import styles from './styles';
 
@@ -10,6 +11,7 @@ const Home = () => {
   const {navigate} = useNavigation();
 
   const [selectedOption, setSelectedOption] = useState(3);
+  const [showBalance, setShowBalance] = useState(true);
 
   const handleOptionPress = (optionIndex: number) => {
     setSelectedOption(optionIndex);
@@ -22,9 +24,12 @@ const Home = () => {
     {label: 'Abr', value: 'abr'},
   ];
 
+  const balanceTitle = showBalance ? 'Saldo Atual' : 'Saldo Oculto';
+  const balanceValue = showBalance ? 'R$ 1.000,00' : '---';
+
   return (
     <View style={styles.container}>
-      <View style={styles.rightContainer}>
+      <View style={styles.profileContainer}>
         <Avatar
           size="medium" // tamanho do Avatar
           rounded // Avatar em formato de círculo
@@ -61,8 +66,24 @@ const Home = () => {
             </Text>
           </TouchableOpacity>
         ))}
-        <Icon size={50} name="calendar" />
+        <EvilIcons size={50} name="calendar" />
       </View>
+
+      <View style={styles.amountContainer}>
+        <View style={styles.saldoContainer}>
+          <Text style={styles.balanceTitle}>{balanceTitle}</Text>
+        </View>
+        <View style={styles.balanceContainer}>
+          <Text style={styles.balanceValue}>{balanceValue}</Text>
+          <TouchableOpacity
+            style={styles.eyeIcon}
+            onPress={() => setShowBalance(!showBalance)}>
+            <FeatherIcons size={40} name={showBalance ? 'eye' : 'eye-off'} />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      <View style={styles.line} />
     </View>
   );
 };
