@@ -1,5 +1,13 @@
 # Minhas Economias - React Native Project
 
+## Configuração
+
+### Pré-requisitos
+
+- [Android Studio](https://developer.android.com/studio)
+- [Node JS](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+
 ## Instalação
 
 Para instalar as dependencias clone o projeto e execute o seguinte comando dentro da pasta.
