@@ -5,22 +5,22 @@ import {Avatar} from 'react-native-elements';
 import styles from './styles';
 
 const Home = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(3);
 
-  const handleOptionPress = optionIndex => {
+  const handleOptionPress = (optionIndex: number) => {
     setSelectedOption(optionIndex);
   };
 
   const options = [
-    {label: 'Jan', value: 'option1'},
-    {label: 'Fev', value: 'option2'},
-    {label: 'Mar', value: 'option3'},
-    {label: 'Abr', value: 'option4'},
+    {label: 'Jan', value: 'jan'},
+    {label: 'Fev', value: 'fev'},
+    {label: 'Mar', value: 'mar'},
+    {label: 'Abr', value: 'abr'},
   ];
 
   return (
-    <View >
-      <TouchableOpacity>
+    <View style={styles.container}>
+      <View style={styles.rightContainer}>
         <Avatar
           size="medium" // tamanho do Avatar
           rounded // Avatar em formato de círculo
@@ -32,7 +32,7 @@ const Home = () => {
           }} // ícone do Avatar
           overlayContainerStyle={styles.avatarContainer} // cor de fundo do Avatar
         />
-      </TouchableOpacity>
+      </View>
 
       <View style={styles.optionsContainer}>
         {options.map((option, index) => (

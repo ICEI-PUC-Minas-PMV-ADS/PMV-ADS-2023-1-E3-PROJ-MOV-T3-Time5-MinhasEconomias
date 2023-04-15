@@ -8,27 +8,29 @@ const styles = StyleSheet.create({
     backgroundColor: '#dcdcf4',
   },
   container: {
-    flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'column',
   },
   rightContainer: {
-    flex: 1,
+    flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
-    paddingRight: 20,
+    padding: 20,
   },
   optionsContainer: {
     flexDirection: 'row',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   optionButton: {
     backgroundColor: '#f5f5f5',
     paddingHorizontal: 20,
     paddingVertical: 10,
-    borderRadius: 5,
+    borderRadius: 80,
+    borderWidth: 1,
+    borderColor: '#444cb4',
   },
   selectedOptionButton: {
-    backgroundColor: '#ccc',
+    backgroundColor: '#444cb4',
   },
   optionButtonText: {
     color: '#333',
