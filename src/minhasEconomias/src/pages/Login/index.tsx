@@ -31,7 +31,7 @@ const Login = () => {
 
     try {
       // const response = await api.post('sessions', { email, password });
-      // navigate('Home' as never)
+      navigate('Home' as never);
     } catch (error) {
       console.log(error);
     }
