@@ -24,7 +24,7 @@ Devido ao alto número de brasileiros inadimplentes no país, acreditamos que a 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+<li><a href="src/minhasEconomias/README.md"> Instruções </a></li>
 
 # Documentação
 
