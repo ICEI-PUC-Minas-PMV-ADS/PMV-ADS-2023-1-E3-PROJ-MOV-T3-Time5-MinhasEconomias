@@ -1,10 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import {Avatar} from 'react-native-elements';
 import {useNavigation} from '@react-navigation/core';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import FeatherIcons from 'react-native-vector-icons/Feather';
+import AsyncStorage from '@react-native-community/async-storage';
 
 import styles from './styles';
 import {
@@ -19,6 +20,15 @@ const Home = () => {
 
   const [selectedOption, setSelectedOption] = useState(3);
   const [showBalance, setShowBalance] = useState(true);
+
+  useEffect(() => {
+    async function fetchMovimentacoes() {
+      const user_id = await AsyncStorage.getItem('@user_id');
+      console.log(`user_id: ${user_id}`);
+    }
+
+    fetchMovimentacoes();
+  }, []);
 
   const handleOptionPress = (optionIndex: number) => {
     setSelectedOption(optionIndex);

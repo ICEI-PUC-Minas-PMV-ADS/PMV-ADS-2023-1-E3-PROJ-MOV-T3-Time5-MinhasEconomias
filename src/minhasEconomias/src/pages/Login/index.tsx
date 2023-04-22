@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/core';
 import {Keyboard} from 'react-native';
 import api from '../../services/axios';
+import AsyncStorage from '@react-native-community/async-storage';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -55,6 +56,8 @@ const Login = () => {
 
     try {
       const response = await api.post('sessions', {email, password});
+      const {id} = response.data;
+      await AsyncStorage.setItem('@user_id', `${id}`);
       console.log(response);
       navigate('Home' as never);
     } catch (error) {
