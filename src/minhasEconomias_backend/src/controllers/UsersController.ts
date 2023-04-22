@@ -5,7 +5,7 @@ export default class StudentController {
   public async create (req: Request, res: Response) {
     const { name, lastname, email, password } = req.body
 
-    const student = {
+    const user = {
       name,
       lastname,
       email,
@@ -18,22 +18,22 @@ export default class StudentController {
       return res.status(400).json({ error: 'Email already registered' })
     }
 
-    const studentResponse = await knex('students').insert(student)
+    const userResponse = await knex('users').insert(user)
 
     let id
 
-    if (studentResponse.length > 0) {
-      id = studentResponse[0]
+    if (userResponse.length > 0) {
+      id = userResponse[0]
     }
 
-    return res.json({ id, ...student })
+    return res.json({ id, ...userResponse })
   }
 
   public async show (req: Request, res: Response) {
     const { id } = req.params
 
-    const student = await knex('users').where('id', id).select().first()
+    const user = await knex('users').where('id', id).select().first()
 
-    return res.json(student)
+    return res.json(user)
   }
 }
