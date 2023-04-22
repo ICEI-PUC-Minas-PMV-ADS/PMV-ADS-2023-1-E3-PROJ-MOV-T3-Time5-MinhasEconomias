@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import knex from '../database/connection'
 
-export default class StudentController {
+export default class UsersController {
   public async create (req: Request, res: Response) {
     const { name, lastname, email, password } = req.body
 
