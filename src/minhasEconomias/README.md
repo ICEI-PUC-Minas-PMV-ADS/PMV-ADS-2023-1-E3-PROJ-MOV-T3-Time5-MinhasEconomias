@@ -13,7 +13,7 @@
 Para instalar as dependencias clone o projeto e execute o seguinte comando dentro da pasta.
 
 ```shell
-// or npm install
+// or npm install --legacy-peer-deps
 yarn install
 ```
 
