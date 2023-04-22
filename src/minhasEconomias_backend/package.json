@@ -1,0 +1,19 @@
+{
+  "name": "minhasEconomias_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev src/server.ts",
+    "migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "postinstall": "knex --knexfile knexfile.ts migrate:latest"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.18.1",
+    "knex": "^2.1.0",
+    "sqlite3": "^5.0.8",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.2"
+  }
+}
