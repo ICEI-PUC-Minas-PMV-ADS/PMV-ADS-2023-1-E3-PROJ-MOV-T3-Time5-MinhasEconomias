@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/core';
 import {Keyboard} from 'react-native';
+import api from '../../services/axios';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -50,6 +51,13 @@ const Register = () => {
     }
 
     try {
+      const response = await api.post('users', {
+        name,
+        lastname,
+        email,
+        password,
+      });
+      console.log(response);
       navigate('Home' as never);
     } catch (error) {
       console.log(error);

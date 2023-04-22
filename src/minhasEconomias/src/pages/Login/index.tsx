@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/core';
 import {Keyboard} from 'react-native';
+import api from '../../services/axios';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
@@ -53,7 +54,8 @@ const Login = () => {
     }
 
     try {
-      // const response = await api.post('sessions', { email, password });
+      const response = await api.post('sessions', {email, password});
+      console.log(response);
       navigate('Home' as never);
     } catch (error) {
       console.log(error);
