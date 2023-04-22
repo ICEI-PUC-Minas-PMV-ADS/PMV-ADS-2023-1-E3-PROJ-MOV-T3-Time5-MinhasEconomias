@@ -79,7 +79,7 @@ const Home = () => {
             size: 30,
             color: '#444cb4',
           }} // ícone do Avatar
-          onPress={() => navigate('Profile' as never)}
+          onPress={() => navigate('EditProfile' as never)}
           overlayContainerStyle={styles.avatarContainer} // cor de fundo do Avatar
         />
       </View>
