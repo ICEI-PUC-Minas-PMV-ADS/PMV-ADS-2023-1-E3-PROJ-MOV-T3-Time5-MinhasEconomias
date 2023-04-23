@@ -12,5 +12,6 @@ routes.post('/sessions', sessionsController.authenticate)
 
 routes.post('/users', usersController.create)
 routes.get('/users/:id', usersController.show)
+routes.put('/users/:id', usersController.edit)
 
 export default routes

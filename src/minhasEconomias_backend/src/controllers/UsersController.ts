@@ -36,4 +36,22 @@ export default class UsersController {
 
     return res.json(user)
   }
+
+  public async edit (req: Request, res: Response) {
+    const { id } = req.params
+
+    const { name, lastname, password } = req.body
+    console.log(password)
+    const user = await knex('users').where('id', id).select().first()
+
+    const userUpdate = {
+      name: name !== '' ? name : user.name,
+      lastname: lastname !== '' ? lastname : user.lastname,
+      password: password !== '' ? password : user.password
+    }
+
+    await knex('users').where('id', id).update(userUpdate)
+
+    return res.json({ id, ...user })
+  }
 }
