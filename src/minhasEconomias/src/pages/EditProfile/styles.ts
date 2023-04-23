@@ -35,6 +35,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
   },
+  backButtonContainer: {
+    position: 'absolute',
+    top: 15,
+    left: 20,
+    marginVertical: 24,
+    marginHorizontal: 0,
+    zIndex: 2,
+  },
 });
 
 export default styles;
