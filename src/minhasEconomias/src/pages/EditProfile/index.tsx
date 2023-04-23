@@ -30,7 +30,8 @@ const EditProfile = () => {
 
   async function submit() {
     try {
-      const response = await api.post('teachers', {
+      const user_id = await AsyncStorage.getItem('@user_id');
+      const response = await api.put(`users/${user_id}`, {
         name,
         lastname,
         password,
@@ -44,7 +45,7 @@ const EditProfile = () => {
   useEffect(() => {
     async function fetchUser() {
       const user_id = await AsyncStorage.getItem('@user_id');
-      const response = await api.get(`users/:${user_id}`);
+      const response = await api.get(`users/${user_id}`);
 
       setName(response.data.name);
       setLastname(response.data.lastname);
