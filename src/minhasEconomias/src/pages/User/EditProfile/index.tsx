@@ -2,29 +2,19 @@ import React, {useEffect, useState} from 'react';
 import {Avatar} from 'react-native-elements';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 
-import Input from '../../components/Input';
-import Button from '../../components/Button';
+import Input from '../../../components/Input';
+import Button from '../../../components/Button';
 
 import styles from './styles';
 
-import api from '../../services/axios';
+import api from '../../../services/axios';
 import AsyncStorage from '@react-native-community/async-storage';
 import {useNavigation} from '@react-navigation/native';
 
 import backicon from '../../assets/backicon.png';
 
-interface User {
-  id: number;
-  name: string;
-  lastname: string;
-  email: string;
-  password: string;
-  picture_url: string;
-}
-
 const EditProfile = () => {
   const {goBack} = useNavigation();
-  const [user, setUser] = useState<User>();
 
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
@@ -37,8 +27,6 @@ const EditProfile = () => {
 
       setName(response.data.name);
       setLastname(response.data.lastname);
-
-      setUser(response.data);
     }
 
     fetchUser();

@@ -2,10 +2,10 @@ import React from 'react';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Login from '../pages/Login';
-import Register from '../pages/Register';
+import Login from '../pages/User/Login';
+import Register from '../pages/User/Register';
 import Home from '../pages/Home';
-import EditProfile from '../pages/EditProfile';
+import EditProfile from '../pages/User/EditProfile';
 
 const App = createNativeStackNavigator();
 
