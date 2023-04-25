@@ -7,6 +7,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 
+
 import {
   Container,
   RegisterButtonContainer,
@@ -64,6 +65,7 @@ const Login = () => {
       console.log(error);
     }
   }
+  
 
   function navigateToRegisterPage() {
     navigate('Register' as never);
@@ -97,6 +99,8 @@ const Login = () => {
       <ForgotPasswordButton>
         <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
       </ForgotPasswordButton>
+      
+      
     </Container>
   );
 };
