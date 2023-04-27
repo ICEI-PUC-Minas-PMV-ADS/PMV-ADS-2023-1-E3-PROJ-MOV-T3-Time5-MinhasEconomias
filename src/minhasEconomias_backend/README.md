@@ -16,7 +16,9 @@ Para instalar as dependencias clone o projeto e execute o seguinte comando dentr
 yarn install
 ```
 
-logo após execute o sistema:
+## Usage
+
+Logo após execute o sistema:
 
 ```shell
 yarn start
