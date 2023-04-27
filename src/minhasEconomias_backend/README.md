@@ -22,6 +22,12 @@ logo após execute o sistema:
 yarn start
 ```
 
+Aplicando ESlint coding style, para melhorar a qualidade do código e manter um estilo consistente de programação.
+
+```shell
+yarn lint --fix
+```
+
 ## Como contribuir
 
 Esteja sempre atento à criação de novas branches, padronização de commits e comentários em código para que possamos melhorar sua mantenabilidade.
