@@ -11,7 +11,8 @@ import api from '../../../services/axios';
 import AsyncStorage from '@react-native-community/async-storage';
 import {useNavigation} from '@react-navigation/native';
 
-import backicon from '../../assets/backicon.png';
+import backicon from '../../../assets/backicon.png';
+
 
 const EditProfile = () => {
   const {goBack} = useNavigation();
