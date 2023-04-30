@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
-import {Avatar} from 'react-native-elements';
-import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Avatar } from 'react-native-elements';
+import { Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 
 import Input from '../../../components/Input';
 import Button from '../../../components/Button';
@@ -9,13 +9,15 @@ import styles from './styles';
 
 import api from '../../../services/axios';
 import AsyncStorage from '@react-native-community/async-storage';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 import backicon from '../../../assets/backicon.png';
 
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 
 const EditProfile = () => {
-  const {goBack} = useNavigation();
+  const { goBack } = useNavigation();
 
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
@@ -51,11 +53,28 @@ const EditProfile = () => {
     goBack();
   }
 
+  const [value, setValue] = useState('');
+  const [description, setDescription] = useState('');
+
+  const handlePositivePress = () => {
+    console.log('Positive value pressed');
+  };
+
+  const handleNegativePress = () => {
+    console.log('Negative value pressed');
+  };
+
+  const handleChangeValue = (text) => {
+    // Remove caracteres não numéricos
+    const numericValue = text.replace(/[^0-9.]/g, '');
+    setValue(parseFloat(numericValue));
+  };
+
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Perfil</Text>
 
-      <TouchableOpacity
+      <TouchableOpacity>
         style={styles.backButtonContainer}
         onPress={handleBackButton}>
         <Image source={backicon} />
@@ -103,6 +122,46 @@ const EditProfile = () => {
           color="red"
           onPress={submit}
         />
+      </View>
+
+      <View style={styles.containerRegister}>
+        <Text style={styles.title}>Meus Registros</Text>
+        <TouchableOpacity style={styles.menuIcon}>
+          <MaterialIcons name="menu" size={30} color="#fff" />
+        </TouchableOpacity>
+        <View style={styles.inputContainer}>
+
+          <Input
+            title="Valor"
+            placeholder="Digite o valor"
+            value={value}
+            onChangeText={setValue}
+            keyboardType="numeric"
+          />
+
+          <Input
+            style={[styles.input, styles.wideInput]}
+            placeholder="Descrição"
+            value={description}
+            onChangeText={setDescription}
+          />
+
+          <View style={styles.buttonsContainer}>
+            <TouchableOpacity style={[styles.buttonRegister, styles.positiveButton]} onPress={handlePositivePress}>
+              <Text style={styles.buttonText}>+</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={[styles.buttonRegister, styles.negativeButton]} onPress={handleNegativePress}>
+              <Text style={styles.buttonText}>-</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+
+        <TouchableOpacity style={[styles.button, styles.registerButton]}>
+          <Text style={styles.registerButtonText}>Registrar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.arrowIcon}>
+          <MaterialIcons name="arrow-back" size={30} color="#000" />
+        </TouchableOpacity>
       </View>
     </ScrollView>
   );
