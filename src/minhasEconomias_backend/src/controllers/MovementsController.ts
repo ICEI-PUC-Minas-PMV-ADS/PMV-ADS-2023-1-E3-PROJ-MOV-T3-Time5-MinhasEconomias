@@ -31,12 +31,10 @@ export default class MovementsController {
   }
 
   public async show (req: Request, res: Response) {
-
     const { idUser } = req.params
 
     const movement = await knex('movements').where('idUser', idUser).select()
 
     return res.json(movement)
   }
-
 }

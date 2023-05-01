@@ -13,7 +13,6 @@ import {useNavigation} from '@react-navigation/native';
 
 import backicon from '../../../assets/backicon.png';
 
-
 const EditProfile = () => {
   const {goBack} = useNavigation();
 
