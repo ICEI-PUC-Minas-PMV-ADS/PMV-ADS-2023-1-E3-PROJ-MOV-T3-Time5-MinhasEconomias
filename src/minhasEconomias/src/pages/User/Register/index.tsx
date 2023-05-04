@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {useNavigation} from '@react-navigation/core';
 import {Keyboard} from 'react-native';
-import api from '../../services/axios';
+import api from '../../../services/axios';
 
-import Button from '../../components/Button';
-import Input from '../../components/Input';
+import Button from '../../../components/Button';
+import Input from '../../../components/Input';
 
 import {
   Container,

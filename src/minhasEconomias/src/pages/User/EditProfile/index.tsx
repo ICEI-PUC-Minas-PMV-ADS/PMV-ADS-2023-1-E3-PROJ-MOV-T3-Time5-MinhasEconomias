@@ -1,36 +1,41 @@
 import React, {useEffect, useState} from 'react';
 import {Avatar} from 'react-native-elements';
-import {ScrollView, Text, View} from 'react-native';
+import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
 
-import Input from '../../components/Input';
-import Button from '../../components/Button';
+import Input from '../../../components/Input';
+import Button from '../../../components/Button';
 
 import styles from './styles';
 
-import api from '../../services/axios';
+import api from '../../../services/axios';
 import AsyncStorage from '@react-native-community/async-storage';
 import {useNavigation} from '@react-navigation/native';
 
-interface User {
-  id: number;
-  name: string;
-  lastname: string;
-  email: string;
-  password: string;
-  picture_url: string;
-}
+import backicon from '../../../assets/backicon.png';
 
 const EditProfile = () => {
-  const {navigate} = useNavigation();
-  const [user, setUser] = useState<User>();
+  const {goBack} = useNavigation();
 
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
   const [password, setPassword] = useState('');
 
+  useEffect(() => {
+    async function fetchUser() {
+      const user_id = await AsyncStorage.getItem('@user_id');
+      const response = await api.get(`users/${user_id}`);
+
+      setName(response.data.name);
+      setLastname(response.data.lastname);
+    }
+
+    fetchUser();
+  }, []);
+
   async function submit() {
     try {
-      const response = await api.post('teachers', {
+      const user_id = await AsyncStorage.getItem('@user_id');
+      const response = await api.put(`users/${user_id}`, {
         name,
         lastname,
         password,
@@ -41,23 +46,19 @@ const EditProfile = () => {
     }
   }
 
-  useEffect(() => {
-    async function fetchUser() {
-      const user_id = await AsyncStorage.getItem('@user_id');
-      const response = await api.get(`users/:${user_id}`);
-
-      setName(response.data.name);
-      setLastname(response.data.lastname);
-
-      setUser(response.data);
-    }
-
-    fetchUser();
-  }, []);
+  function handleBackButton() {
+    goBack();
+  }
 
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Perfil</Text>
+
+      <TouchableOpacity
+        style={styles.backButtonContainer}
+        onPress={handleBackButton}>
+        <Image source={backicon} />
+      </TouchableOpacity>
 
       <View style={styles.profileContainer}>
         <Avatar

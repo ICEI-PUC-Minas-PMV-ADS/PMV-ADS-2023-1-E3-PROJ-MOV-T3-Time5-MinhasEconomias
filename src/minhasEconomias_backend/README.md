@@ -16,10 +16,18 @@ Para instalar as dependencias clone o projeto e execute o seguinte comando dentr
 yarn install
 ```
 
-logo após execute o sistema:
+## Usage
+
+Logo após execute o sistema:
 
 ```shell
 yarn start
+```
+
+Aplicando ESlint coding style, para melhorar a qualidade do código e manter um estilo consistente de programação:
+
+```shell
+yarn lint --fix
 ```
 
 ## Como contribuir
