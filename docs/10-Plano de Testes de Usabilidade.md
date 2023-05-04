@@ -1,11 +1,29 @@
 # Plano de Testes de Usabilidade
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+Os objetivos dos testes de usabilidade durante o desenvolvimento do site Minhas Economias incluem: 
+   
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+* Identificar problemas na interface e no design do site;  
+
+* O usuário conseguirá criar e/ou acessar sua conta por meio de e-mail e senha; 
+
+* Enquanto o usuário estiver logado, ele poderá cadastrar ganhos e despesas; 
+
+* Enquanto o usuário estiver logado, ele poderá ver o saldo remanescente; 
+
+* Enquanto o usuário estiver logado, ele poderá editar/alterar informações; 
+
+ 
+
+**Seleção dos participantes** 
+
+Para a realização do teste serão selecionados alunos e seus familiares que já acessaram ou não uma plataforma de revenda de dispositivos eletrônicos usados. 
+
+ 
+
+**Local e Ambiente de Avaliação** 
+
+Os participantes participarão do teste de usabilidade remotamente e serão acompanhados por moderadores e pesquisadores. O teste será realizado  através de gravação e de prints de tela para monitorar a interação do usuário com o sistema. 
+
+Em paralelo, será feita uma avaliação do grau de satisfação do usuário, que tem por objetivo obter uma opinião geral sobre o sistema. Ela será realizada por meio de  questionário com 5 questões em escala Likert. 
