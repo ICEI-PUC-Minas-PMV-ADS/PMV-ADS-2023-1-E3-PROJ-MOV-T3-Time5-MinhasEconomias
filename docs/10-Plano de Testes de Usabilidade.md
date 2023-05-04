@@ -1,7 +1,7 @@
 # Plano de Testes de Usabilidade
 
 
-Os objetivos dos testes de usabilidade durante o desenvolvimento do site Minhas Economias incluem: 
+Os objetivos dos testes de usabilidade durante o desenvolvimento do aplicativo Minhas Economias incluem: 
    
 
 * Identificar problemas na interface e no design do site;  
