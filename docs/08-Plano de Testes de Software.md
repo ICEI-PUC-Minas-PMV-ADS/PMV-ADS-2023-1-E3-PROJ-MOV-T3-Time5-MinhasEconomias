@@ -1,19 +1,15 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+![Imagem1](https://user-images.githubusercontent.com/100963513/236345830-8dbc20f3-c1db-4d77-9af0-56c04216ca63.png)
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+![Imagem2](https://user-images.githubusercontent.com/100963513/236346304-fcb12ccb-1764-472b-978d-c0c43cb67f93.png)
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
+![Imagem3](https://user-images.githubusercontent.com/100963513/236346344-2ae1c9ab-9972-46b9-8dce-1b4b96111eef.png)
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+![Imagem4](https://user-images.githubusercontent.com/100963513/236346371-dcd05eec-38b5-4e8b-bccc-235faa192008.png)
+
+![Imagem5](https://user-images.githubusercontent.com/100963513/236346400-956cf137-c878-4b66-91cb-0a1e54511c4e.png)
+
+![Imagem6](https://user-images.githubusercontent.com/100963513/236346431-f43b5f3f-5631-4e5a-952f-8e8f27b943a9.png)
+
+![Imagem7](https://user-images.githubusercontent.com/100963513/236346456-ce026fc9-ce37-42ff-9abf-3df63e9b25a8.png)
