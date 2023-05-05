@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState, useEffect} from 'react';
 import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
@@ -62,7 +63,9 @@ const Home = () => {
   };
 
   // TODO: chamar tela de cadastro de com
-  function handleCadastraDespesaouLucro() {}
+  function navigateToCreatePage() {
+    navigate('Create' as never);
+  }
 
   // TODO: chamar exclusão
   function handleRemoveDespesaouLucro() {}
@@ -145,7 +148,7 @@ const Home = () => {
           text="Adicionar"
           color="purple"
           halfSize={true}
-          onPress={handleCadastraDespesaouLucro}
+          onPress={navigateToCreatePage}
         />
         <Button
           text="Remover"
