@@ -1,59 +1,8 @@
-/* eslint-disable prettier/prettier */
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  backButton: {
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-  },
-
-  avatarContainer: {
-    backgroundColor: '#dcdcf4',
-  },
-
   container: {
-    flexDirection: 'column',
-  },
-
-  profileContainer: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'flex-end',
-    padding: 20,
-    paddingTop: 35,
-    paddingBottom: 30,
-  },
-
-  text: {
-    marginTop: 40,
-    marginLeft: 20,
-    marginRight: 20,
-  },
-
-  input: {
-    marginLeft: 20,
-    marginRight: 20,
-  },
-
-  text1: {
-    marginTop: 20,
-    marginLeft: 20,
-    marginRight: 20,
-  },
-
-  inputContainer: {
-    marginTop: 120,
-    marginLeft: 20,
-    marginRight: 20,
-  },
-
-  button: {
-    marginTop: 200,
-    marginLeft: 20,
-    marginRight: 20,
-    borderRadius: 5,
-    backgroundColor: '#414BB2',
+    flex: 1,
   },
   title: {
     margin: 32,
@@ -64,6 +13,40 @@ const styles = StyleSheet.create({
     lineHeight: 28,
     textAlign: 'center',
     color: '#452e4f',
+  },
+  profileContainer: {
+    position: 'absolute',
+    top: 15,
+    left: 20,
+    marginVertical: 10,
+    marginHorizontal: 320,
+    zIndex: 2,
+  },
+  avatarContainer: {
+    backgroundColor: '#dcdcf4',
+  },
+  inputsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  },
+  buttonContainer: {
+    margin: 16,
+  },
+  buttonsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+  },
+  backButtonContainer: {
+    position: 'absolute',
+    top: 15,
+    left: 20,
+    marginVertical: 24,
+    marginHorizontal: 0,
+    zIndex: 2,
   },
 });
 

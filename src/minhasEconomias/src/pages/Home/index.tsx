@@ -64,11 +64,8 @@ const Home = () => {
 
   // TODO: chamar tela de cadastro de com
   function navigateToCreatePage() {
-    navigate('Create' as never);
+    navigate('MovementsCreate' as never);
   }
-
-  // TODO: chamar exclusão
-  function handleRemoveDespesaouLucro() {}
 
   return (
     <View style={styles.container}>
@@ -131,7 +128,7 @@ const Home = () => {
       <ScrollView style={{maxHeight: 350, overflow: 'scroll'}}>
         {expenses.map((expense, index) => {
           return (
-            <ButtonContainer key={index} color={getButtonColor(index)}>
+            <ButtonContainer halfSize={false} key={index} color={getButtonColor(index)}>
               <ExpenseName color={getButtonColor(index)}>
                 {expense.name}
               </ExpenseName>
@@ -143,20 +140,12 @@ const Home = () => {
         })}
       </ScrollView>
 
-      <View style={styles.buttonsContainer}>
-        <Button
+      <Button
           text="Adicionar"
           color="purple"
-          halfSize={true}
+          halfSize={false}
           onPress={navigateToCreatePage}
         />
-        <Button
-          text="Remover"
-          halfSize={true}
-          color="red"
-          onPress={handleRemoveDespesaouLucro}
-        />
-      </View>
     </View>
   );
 };

@@ -6,7 +6,7 @@ import Login from '../pages/User/Login';
 import Register from '../pages/User/Register';
 import Home from '../pages/Home';
 import EditProfile from '../pages/User/EditProfile';
-import Create from '../pages/Transactions/Create';
+import MovementsCreate from '../pages/Transactions/Create';
 
 const App = createNativeStackNavigator();
 
@@ -20,7 +20,7 @@ const Router = () => {
       <App.Screen name="Register" component={Register} />
       <App.Screen name="Home" component={Home} />
       <App.Screen name="EditProfile" component={EditProfile} />
-      <App.Screen name="Create" component={Create} />
+      <App.Screen name="MovementsCreate" component={MovementsCreate} />
     </App.Navigator>
   );
 };
