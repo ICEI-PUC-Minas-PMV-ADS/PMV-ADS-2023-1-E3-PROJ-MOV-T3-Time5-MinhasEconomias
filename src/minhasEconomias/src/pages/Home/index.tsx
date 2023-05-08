@@ -62,6 +62,7 @@ const Home = () => {
     return index % 2 === 0 ? 'purple' : 'white';
   };
 
+  // TODO: chamar tela de cadastro de com
   function navigateToCreatePage() {
     navigate('MovementsCreate' as never);
   }

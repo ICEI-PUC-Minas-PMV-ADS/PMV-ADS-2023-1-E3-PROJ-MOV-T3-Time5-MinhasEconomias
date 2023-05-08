@@ -1,8 +1,7 @@
-/* eslint-disable prettier/prettier */
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  scrollView: {
+  container: {
     flex: 1,
   },
   title: {
@@ -16,28 +15,39 @@ const styles = StyleSheet.create({
     color: '#452e4f',
   },
   profileContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    width: '100%',
+    position: 'absolute',
+    top: 15,
+    left: 20,
+    marginVertical: 10,
+    marginHorizontal: 320,
     zIndex: 2,
   },
   avatarContainer: {
     backgroundColor: '#dcdcf4',
   },
   inputsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-    marginTop: 50,
   },
-
+  buttonContainer: {
+    margin: 16,
+  },
   buttonsContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    alignSelf: 'center',
-    width: '80%',
+    alignItems: 'center',
+    width: '100%',
   },
-
-
+  backButtonContainer: {
+    position: 'absolute',
+    top: 15,
+    left: 20,
+    marginVertical: 24,
+    marginHorizontal: 0,
+    zIndex: 2,
+  },
 });
 
 export default styles;

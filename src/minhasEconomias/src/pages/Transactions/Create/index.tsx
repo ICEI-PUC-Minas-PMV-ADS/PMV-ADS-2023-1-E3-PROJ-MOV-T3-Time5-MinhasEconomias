@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, {useState} from 'react';
 import {Avatar} from 'react-native-elements';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
@@ -13,11 +12,11 @@ import {useNavigation} from '@react-navigation/native';
 import backicon from '../../../assets/backicon.png';
 
 const MovementsCreate = () => {
-    const {goBack} = useNavigation();
-    const {navigate} = useNavigation();
+  const {goBack} = useNavigation();
+  const {navigate} = useNavigation();
 
-  const [valor, setValor] = useState('');
-  const [description, setDescription] = useState('');
+  const [name, setName] = useState('');
+  const [lastname, setLastname] = useState('');
 
   async function submit() {
     try {
@@ -26,55 +25,52 @@ const MovementsCreate = () => {
       console.log(err);
     }
   }
+
   function handleBackButton() {
     goBack();
   }
 
   return (
-      <ScrollView style={styles.scrollView}>
-        <View>
-          <Text style={styles.title}>Transação</Text>
-        </View>
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>Transação</Text>
 
-        <View style={styles.profileContainer}>
-          <TouchableOpacity
-            onPress={handleBackButton}>
-            <Image source={backicon} />
-          </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.backButtonContainer}
+        onPress={handleBackButton}>
+        <Image source={backicon} />
+      </TouchableOpacity>
 
-          <Avatar
-            size="medium" // tamanho do Avatar
-            rounded // Avatar em formato de círculo
-            icon={{
-              name: 'user',
-              type: 'font-awesome',
-              size: 30,
-              color: '#444cb4',
-            }} // ícone do Avatar
-            onPress={() => navigate('EditProfile' as never)}
-            overlayContainerStyle={styles.avatarContainer} // cor de fundo do Avatar
-          />
-        </View>
-        <View style={styles.inputsContainer}>
-          <Input
-            title="Valor"
-            placeholder="R$ 100,00"
-            value={valor}
-            onChangeText={value => setValor(value)}
-          />
+      <View style={styles.profileContainer}>
+        <Avatar
+          size="medium" // tamanho do Avatar
+          rounded // Avatar em formato de círculo
+          icon={{
+            name: 'user',
+            type: 'font-awesome',
+            size: 30,
+            color: '#444cb4',
+          }} // ícone do Avatar
+          onPress={() => navigate('EditProfile' as never)}
+          overlayContainerStyle={styles.avatarContainer} // cor de fundo do Avatar
+        />
+      </View>
 
+      <Input
+        title="Valor"
+        placeholder="R$ 100,00"
+        value={name}
+        onChangeText={value => setName(value)}
+      />
 
-          <Input
-            title="Descrição"
-            placeholder="Exemplo: Tênis Novo ou Salário"
-            value={description}
-            onChangeText={value => setDescription(value)}
-          />
-        </View>
-        <View style={styles.buttonsContainer}>
-        <Button  text="Adicionar" color="purple" onPress={submit} />
-        </View>
-      </ScrollView>
+      <Input
+        title="Descrição"
+        placeholder="Exemplo: Tênis Novo ou Salário"
+        value={lastname}
+        onChangeText={value => setLastname(value)}
+      />
+
+      <Button text="Adicionar" color="purple" onPress={submit} />
+    </ScrollView>
   );
 };
 
