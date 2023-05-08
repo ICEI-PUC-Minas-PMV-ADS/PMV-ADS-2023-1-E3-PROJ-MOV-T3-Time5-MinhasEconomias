@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     top: 15,
     left: 20,
     marginVertical: 10,
-    marginHorizontal: 320,
+    marginHorizontal: '76%',
     zIndex: 2,
   },
   avatarContainer: {

@@ -98,7 +98,7 @@ const EditProfile = () => {
       <View style={styles.buttonsContainer}>
         <Button text="Salvar" color="purple" halfSize={true} onPress={submit} />
         <Button
-          text="Excluir Conta"
+          text="Excluir"
           halfSize={true}
           color="red"
           onPress={submit}
