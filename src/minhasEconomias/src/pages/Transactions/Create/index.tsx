@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, {useState} from 'react';
 import {Avatar} from 'react-native-elements';
 import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
