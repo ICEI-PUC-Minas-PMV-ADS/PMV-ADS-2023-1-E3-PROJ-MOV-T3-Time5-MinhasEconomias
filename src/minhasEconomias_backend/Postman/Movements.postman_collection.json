@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "f31860ae-6a48-4322-99da-7f55bbfff159",
+		"name": "Movements",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27167557",
+		"_collection_link": "https://warped-escape-795885.postman.co/workspace/Team-Workspace~05e927e8-fced-4e47-8dd1-8b64cbb5f226/collection/27167557-f31860ae-6a48-4322-99da-7f55bbfff159?action=share&creator=27167557&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create Movements",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Salario\",\r\n    \"value\": 2000.00,\r\n    \"date\": \"2023-05-21\",\r\n    \"movementType\": \"Receita\",\r\n    \"idUser\": 7,\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/movements",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movements",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/movements/user/6",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movements",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Movements",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"Salario\",\r\n    \"value\": 5000,\r\n    \"date\": \"2023-05-21\",\r\n    \"movementType\": \"Receita\",\r\n    \"idUser\": 7,\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/movements/14",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movements",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Movements",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/movements/9",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"movements",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
