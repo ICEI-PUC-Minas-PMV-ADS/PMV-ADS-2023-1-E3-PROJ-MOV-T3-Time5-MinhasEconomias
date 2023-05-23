@@ -35,18 +35,18 @@ export default class MovementsController {
     const { idUser } = req.params
 
     const movement = await knex('movements').where({
-      idUser: idUser,
+      idUser,
       active: true
     }).select()
 
     return res.json(movement)
   }
 
-  public async edit(req: Request, res: Response) {
+  public async edit (req: Request, res: Response) {
     const { id } = req.params
 
     const { description, value, date, movementType, idUser, active } = req.body
-  
+
     const movement = await knex('movements').where('id', id).select().first()
 
     const movementUpdate = {
@@ -61,14 +61,13 @@ export default class MovementsController {
     await knex('movements').where('id', id).update(movementUpdate)
 
     return res.json({ id, ...movement })
-
   }
 
-  public async delete(req: Request, res: Response) {
+  public async delete (req: Request, res: Response) {
     const { id } = req.params
-  
+
     const movement = await knex('movements').where('id', id).select().first()
-  
+
     await knex('movements').where('id', id).update('active', false)
 
     return res.json(movement)
