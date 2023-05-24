@@ -34,12 +34,19 @@ export default class MovementsController {
   public async show (req: Request, res: Response) {
     const { idUser } = req.params
 
-    const movement = await knex('movements').where({
+    const movements = await knex('movements').where({
       idUser,
       active: true
     }).select()
 
-    return res.json(movement)
+    const despesa = movements
+      .filter(movement => movement.movementType === 'Despesa')
+      .reduce((acc, item) => acc + item.value, 0)
+    const receita = movements
+      .filter(movement => movement.movementType === 'Receita')
+      .reduce((acc, item) => acc + item.value, 0)
+    const amount = receita - despesa
+    return res.json({ amount, movements })
   }
 
   public async edit (req: Request, res: Response) {
