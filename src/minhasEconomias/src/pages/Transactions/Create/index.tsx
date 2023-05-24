@@ -7,21 +7,38 @@ import Input from '../../../components/Input';
 import Button from '../../../components/Button';
 
 import styles from './styles';
+import api from '../../../services/axios';
 
 import {useNavigation} from '@react-navigation/native';
 
 import backicon from '../../../assets/backicon.png';
 
+import AsyncStorage from '@react-native-community/async-storage';
+
 const MovementsCreate = () => {
   const {goBack} = useNavigation();
   const {navigate} = useNavigation();
 
-  const [name, setName] = useState('');
-  const [lastname, setLastname] = useState('');
+  const [valueMovement, setValueMovement] = useState('');
+  const [description, setDescription] = useState('');
 
   async function submit() {
     try {
-      // console.log(response);
+      if (!description || !valueMovement) {
+        return;
+      }
+
+      const user_id = await AsyncStorage.getItem('@user_id');
+      const response = await api.post('movements', {
+        description,
+        value: valueMovement,
+        date: new Date().toLocaleDateString(),
+        movementType: 'Receita',
+        idUser: user_id,
+        active: true,
+      });
+      console.log(response);
+      navigate('Home' as never);
     } catch (err) {
       console.log(err);
     }
@@ -57,17 +74,17 @@ const MovementsCreate = () => {
       </View>
 
       <Input
-        title="Valor"
-        placeholder="R$ 100,00"
-        value={name}
-        onChangeText={value => setName(value)}
+        title="Descrição"
+        placeholder="Exemplo: Tênis Novo ou Salário"
+        value={description}
+        onChangeText={value => setDescription(value)}
       />
 
       <Input
-        title="Descrição"
-        placeholder="Exemplo: Tênis Novo ou Salário"
-        value={lastname}
-        onChangeText={value => setLastname(value)}
+        title="Valor"
+        placeholder="R$ 100,00"
+        value={valueMovement}
+        onChangeText={value => setValueMovement(value)}
       />
 
       <Button text="Adicionar" color="purple" onPress={submit} />

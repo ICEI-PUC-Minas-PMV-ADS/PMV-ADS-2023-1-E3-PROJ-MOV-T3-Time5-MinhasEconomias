@@ -15,7 +15,7 @@ import {useNavigation} from '@react-navigation/native';
 import backicon from '../../../assets/backicon.png';
 
 const EditProfile = () => {
-  const {goBack} = useNavigation();
+  const {goBack,navigate} = useNavigation();
 
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
@@ -42,6 +42,7 @@ const EditProfile = () => {
         password,
       });
       console.log(response);
+      navigate('Home' as never);
     } catch (err) {
       console.log(err);
     }

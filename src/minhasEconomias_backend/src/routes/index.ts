@@ -18,5 +18,7 @@ routes.put('/users/:id', usersController.edit)
 
 routes.post('/movements', movementsController.create)
 routes.get('/movements/user/:idUser', movementsController.show)
+routes.put('/movements/:id', movementsController.edit)
+routes.delete('/movements/:id', movementsController.delete)
 
 export default routes

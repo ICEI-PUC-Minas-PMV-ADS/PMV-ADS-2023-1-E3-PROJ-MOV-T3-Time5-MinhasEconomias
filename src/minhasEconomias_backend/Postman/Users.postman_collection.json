@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "1f394236-3e54-4d12-bcef-dd76f8f9e98d",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27167557",
+		"_collection_link": "https://warped-escape-795885.postman.co/workspace/Team-Workspace~05e927e8-fced-4e47-8dd1-8b64cbb5f226/collection/27167557-1f394236-3e54-4d12-bcef-dd76f8f9e98d?action=share&creator=27167557&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Karen\",\r\n    \"lastname\": \"Franco\",\r\n    \"email\": \"karen@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/users/6",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Karen\",\r\n    \"lastname\": \"Franco\",\r\n    \"email\": \"karen@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users/6",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
