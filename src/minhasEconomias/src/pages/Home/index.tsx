@@ -1,12 +1,14 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
-import React, {useState, useEffect} from 'react';
+import React, {useState,useEffect} from 'react';
 import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import {Avatar} from 'react-native-elements';
-import {useNavigation} from '@react-navigation/core';
+import {useNavigation,useIsFocused} from '@react-navigation/core';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import FeatherIcons from 'react-native-vector-icons/Feather';
 import AsyncStorage from '@react-native-community/async-storage';
+
+import api from '../../services/axios';
 
 import styles from './styles';
 import {
@@ -16,20 +18,43 @@ import {
 } from '../../components/Button/styles';
 import Button from '../../components/Button';
 
+interface Movement {
+  id: number;
+  description: string;
+  lastname: string;
+  value: number;
+  date: Date;
+  movementType: string
+  idUser: number
+  active: number
+}
+
 const Home = () => {
   const {navigate} = useNavigation();
 
   const [selectedOption, setSelectedOption] = useState(3);
   const [showBalance, setShowBalance] = useState(true);
+  const [amount, setAmount] = useState(0);
+  const [expenses, setExpenses] = useState<Movement[]>([]);
+  const isFocused = useIsFocused();
 
   useEffect(() => {
     async function fetchMovimentacoes() {
-      const user_id = await AsyncStorage.getItem('@user_id');
-      console.log(`user_id: ${user_id}`);
+      try {
+        const user_id = await AsyncStorage.getItem('@user_id');
+        const response = await api.get(`movements/user/${user_id}`);
+        console.log(response);
+        setAmount(response.data.amount);
+        setExpenses(response.data.movements);
+      } catch (err) {
+        console.log(err);
+      }
     }
 
-    fetchMovimentacoes();
-  }, []);
+    if (isFocused) {
+      fetchMovimentacoes();
+    }
+  }, [isFocused]);
 
   const handleOptionPress = (optionIndex: number) => {
     setSelectedOption(optionIndex);
@@ -43,19 +68,8 @@ const Home = () => {
     {label: 'Abr', value: 'abr'},
   ];
 
-  //TODO: substituir por chamada na fake API
-  const expenses = [
-    {name: 'Despesa 1', value: 100.0},
-    {name: 'Despesa 2', value: 50.0},
-    {name: 'Despesa 3', value: 75.0},
-    {name: 'Despesa 4', value: 120.0},
-    {name: 'Despesa 5', value: 85.0},
-    {name: 'Despesa 6', value: 60.0},
-    {name: 'Despesa 7', value: 110.0},
-  ];
-
   const balanceTitle = showBalance ? 'Saldo Atual' : 'Saldo Oculto';
-  const balanceValue = showBalance ? 'R$ 1.000,00' : '---';
+  const balanceValue = showBalance ? `R$ ${amount}` : '---';
 
   // Função que retorna a cor de fundo do botão, com base no índice
   const getButtonColor = (index: number) => {
@@ -130,7 +144,7 @@ const Home = () => {
           return (
             <ButtonContainer halfSize={false} key={index} color={getButtonColor(index)}>
               <ExpenseName color={getButtonColor(index)}>
-                {expense.name}
+                {expense.description}
               </ExpenseName>
               <ExpenseValue color={getButtonColor(index)}>
                 {showBalance ? `RS ${expense.value.toFixed(2)}` : '****'}
