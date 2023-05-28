@@ -39,13 +39,16 @@ export default class MovementsController {
       active: true
     }).select()
 
-    const despesa:number = movements
-      .filter(movement => movement.movementType === 'Despesa')
-      .reduce((acc, item) => acc + item.value, 0)
-    const receita:number = movements
-      .filter(movement => movement.movementType === 'Receita')
-      .reduce((acc, item) => acc + item.value, 0)
-    const amount = parseFloat((receita - despesa).toString()).toFixed(2)
+    const { despesa, receita } = movements.reduce((acc, item) => {
+      if (item.movementType === 'Despesa') {
+        acc.despesa += item.value
+      } else if (item.movementType === 'Receita') {
+        acc.receita += item.value
+      }
+      return acc
+    }, { despesa: 0, receita: 0 })
+
+    const amount = (receita - despesa).toFixed(2)
     return res.json({ amount, movements })
   }
 
