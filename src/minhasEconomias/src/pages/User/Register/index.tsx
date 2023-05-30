@@ -63,7 +63,14 @@ const Register = () => {
       console.log(response);
       navigate('Home' as never);
     } catch (error) {
-      console.log(error);
+      if (error.response) {
+        console.log('Server responded with status code:', error.response.status);
+        console.log('Response data:', error.response.data);
+      } else if (error.request) {
+        console.log('No response received:', error.request);
+      } else {
+        console.log('Error creating request:', error.message);
+      }
     }
   }
 
