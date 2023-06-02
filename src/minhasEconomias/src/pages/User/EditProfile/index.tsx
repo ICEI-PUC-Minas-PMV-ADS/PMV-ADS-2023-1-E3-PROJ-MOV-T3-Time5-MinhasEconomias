@@ -52,7 +52,7 @@ const EditProfile = () => {
   function handleBackButton() {
     goBack();
   }
-  
+
   function navigateToLoginPage() {
     navigate('Login' as never);
   }
