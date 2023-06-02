@@ -42,6 +42,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 0,
     zIndex: 2,
   },
+  logoutContainer: {
+    position: 'absolute',
+    right: 20,
+    marginVertical: 24,
+    marginHorizontal: 0,
+    zIndex: 2,
+  },
 });
 
 export default styles;

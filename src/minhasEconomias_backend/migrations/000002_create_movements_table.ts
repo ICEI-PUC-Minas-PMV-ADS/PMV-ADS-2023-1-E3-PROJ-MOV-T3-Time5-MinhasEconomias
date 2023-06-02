@@ -9,6 +9,7 @@ export async function up (knex: Knex): Promise<void> {
     table.date('date').notNullable
     table.string('movementType').notNullable
     table.integer('idUser').notNullable
+    table.boolean('active').notNullable
   })
 }
 
