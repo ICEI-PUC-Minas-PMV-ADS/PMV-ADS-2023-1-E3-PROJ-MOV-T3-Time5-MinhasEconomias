@@ -13,6 +13,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import {useNavigation} from '@react-navigation/native';
 
 import backicon from '../../../assets/backicon.png';
+import logouticon from '../../../assets/logouticon.png';
 
 const EditProfile = () => {
   const {goBack,navigate} = useNavigation();
@@ -51,6 +52,10 @@ const EditProfile = () => {
   function handleBackButton() {
     goBack();
   }
+  
+  function navigateToLoginPage() {
+    navigate('Login' as never);
+  }
 
   return (
     <ScrollView style={styles.container}>
@@ -75,6 +80,11 @@ const EditProfile = () => {
           overlayContainerStyle={styles.avatarContainer} // cor de fundo do Avatar
         />
       </View>
+      <TouchableOpacity
+        style={styles.logoutContainer}
+        onPress={navigateToLoginPage}>
+        <Image source={logouticon} />
+      </TouchableOpacity>
 
       <Input
         title="Nome"
