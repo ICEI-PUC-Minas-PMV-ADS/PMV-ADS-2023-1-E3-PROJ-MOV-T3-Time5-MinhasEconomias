@@ -29,7 +29,8 @@
     "react-native-screens": "^3.13.1",
     "react-native-svg": "^12.3.0",
     "react-native-vector-icons": "^9.2.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
