@@ -113,11 +113,7 @@ const EditProfile = () => {
       <View style={styles.buttonsContainer}>
         <Button text="Salvar" color="purple" halfSize={true} onPress={submit} />
         <Button
-          text="Excluir"
-          halfSize={true}
-          color="red"
-          onPress={submit}
-        />
+          text="Excluir" halfSize={true} color="red" onPress={submit} />
       </View>
     </ScrollView>
   );

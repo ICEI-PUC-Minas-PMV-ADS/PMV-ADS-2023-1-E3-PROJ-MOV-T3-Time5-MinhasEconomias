@@ -22,7 +22,7 @@ const MovementsCreate = () => {
   const [valueMovement, setValueMovement] = useState('');
   const [description, setDescription] = useState('');
 
-  async function submit() {
+  async function receita() {
     try {
       if (!description || !valueMovement) {
         return;
@@ -34,6 +34,27 @@ const MovementsCreate = () => {
         value: valueMovement,
         date: new Date().toLocaleDateString(),
         movementType: 'Receita',
+        idUser: user_id,
+        active: true,
+      });
+      console.log(response);
+      navigate('Home' as never);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+  async function despesa() {
+    try {
+      if (!description || !valueMovement) {
+        return;
+      }
+
+      const user_id = await AsyncStorage.getItem('@user_id');
+      const response = await api.post('movements', {
+        description,
+        value: valueMovement,
+        date: new Date().toLocaleDateString(),
+        movementType: 'Despesa',
         idUser: user_id,
         active: true,
       });
@@ -86,8 +107,10 @@ const MovementsCreate = () => {
         value={valueMovement}
         onChangeText={value => setValueMovement(value)}
       />
-
-      <Button text="Adicionar" color="purple" onPress={submit} />
+      <View style={styles.buttonsContainer}>
+      <Button text="Receita" color="purple" halfSize={true} onPress={receita} />
+      <Button text="Despesa" color="red" halfSize={true} onPress={despesa} />
+      </View>
     </ScrollView>
   );
 };

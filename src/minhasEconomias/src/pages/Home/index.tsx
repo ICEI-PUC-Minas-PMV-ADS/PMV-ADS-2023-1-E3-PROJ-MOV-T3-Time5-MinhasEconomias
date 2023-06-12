@@ -155,7 +155,7 @@ const Home = () => {
       </ScrollView>
 
       <Button
-          text="Adicionar"
+          text="Nova Movimentação"
           color="purple"
           halfSize={false}
           onPress={navigateToCreatePage}
