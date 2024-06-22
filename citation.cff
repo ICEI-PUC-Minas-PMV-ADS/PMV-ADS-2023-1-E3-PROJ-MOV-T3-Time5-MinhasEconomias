@@ -1,0 +1,24 @@
+message: Please cite this software using these metadata.
+title: Minhas Economias
+authors:
+  - family-names: Vicente do Vale Melo
+    given-names: José
+  - family-names: Franco Alavarque Escobedo
+    given-names: Karen
+  - family-names: Carlos Gil de Souza
+    given-names: Luiz
+  - family-names: Vitor Rodrigues da Silva
+    given-names: Pedro
+  - family-names: Daniela Figueiredo Barbosa
+    given-names: Ursula
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Curcino De Lima
+    given-names: Mateus
+keywords:
+  - Economia
+  - Finanças 
+  - Gestão Financeira
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/PMV-ADS-2023-1-E3-PROJ-MOV-T3-Time5-MinhasEconomias
+version: 1.0.0
+date-released: 2023-06-12
